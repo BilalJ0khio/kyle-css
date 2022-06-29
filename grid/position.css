@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+.parent {
+  background-color: mediumslateblue;
+  color: aliceblue;
+}
+
+.parent-one {
+  position: relative;
+  top: 100px;
+  z-index: 40;
+}
+.parent-two {
+  margin-top: 10px;
+  position: relative;
+  z-index: 20;
+}
+
+.child {
+  padding: 1rem;
+}
+.child1 {
+  background-color: cadetblue;
+  z-index: 1;
+}
+
+.child2 {
+  background-color: darkgreen;
+  z-index: 2;
+}
+
+.child3 {
+  background-color: deepskyblue;
+  color: azure;
+  z-index: 3;
+}
+
+.parent-two > :nth-child(n) {
+  border-bottom: 1px solid white;
+}
+
+.parent-two > :nth-child(1) {
+  background-color: teal;
+  z-index: 11;
+}
+
+.parent-two > :nth-child(2) {
+  background-color: brown;
+  z-index: 13;
+}
+
+.parent-two > :nth-child(3) {
+  background-color: burlywood;
+  z-index: 15;
+}
